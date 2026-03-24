@@ -126,4 +126,5 @@ print(text.count("python")
 
 # Replace function challenge
 phone = "+49 (176) 123-4567"
-print(phone.replace("+", "").replace("(", "").replace(")", "").replace("-", ""))
+print(phone.replace("+", "").replace("(", "").replace(")",
+      "").replace("-", "").replace(" ", ""))
