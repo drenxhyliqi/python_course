@@ -63,4 +63,35 @@ sub = "com"
 
 print(f"Info@{name}.{sub}")
 print(f"support@{name}.{sub}")
-print(f"www@{name}.{sub}")
+print(f"www@{name}.{sub} \n")
+
+# Challenge 3 - Data Types
+age = 20
+height = 1.76
+name = "Dren"
+isStudent = True
+graduate = None
+print("---------------------------------------")
+# Data value
+print("Data values of the variables:")
+print(age)
+print(height)
+print(name)
+print(isStudent)
+print(graduate)
+print("\n")
+
+# Data types
+print("Data types of the variables:")
+print(type(age))
+print(type(height))
+print(type(name))
+print(type(isStudent))
+print(type(graduate))
+print("\n")
+
+# Data lengths
+print("Data lengths of the variables:")
+print(len(name))
+print(age.bit_length())
+print("---------------------------------------")
