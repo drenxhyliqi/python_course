@@ -43,3 +43,15 @@ print("Hello my name is", name)  # You can print variables along with strings
 print(f"Hello my name is {name}")
 # You can also concatenate strings and variables using the + operator
 print("Hello my name is " + name)
+
+
+# Input built in function of Python
+# This will prompt the user to enter a value and return it as a string
+userValue1 = input("Enter the first value: ")
+# This will prompt the user to enter a value and return it as a string
+userValue2 = input("Enter the second value: ")
+# This will print the values entered by the user
+print("You entered:", userValue1, "and ", userValue2)
+# This will convert the input strings to integers and calculate their sum
+sum = int(userValue1) + int(userValue2)
+print("The sum of the two values is:", sum)  # This will print the sum of
