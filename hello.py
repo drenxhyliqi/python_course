@@ -96,4 +96,13 @@ print(len(name))
 print(age.bit_length())
 print("---------------------------------------")
 
-print("Test")
+# Working with strings
+
+# Type
+name = "Dren"
+age = 20
+print(type(name))
+print(type(age))
+
+# str
+print("Your age is: " + str(age))
