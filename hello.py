@@ -121,4 +121,9 @@ python is easy to learn and python is
 one of the most used languages in 2026
 python is also used in data, web, ai etc
 """
-print(text.count("python")) #This shows how many times the python word is repeated *it's case sensitive*
+print(text.count("python")
+      )  # This shows how many times the python word is repeated *it's case sensitive*
+
+# Replace function challenge
+phone = "+49 (176) 123-4567"
+print(phone.replace("+", "").replace("(", "").replace(")", "").replace("-", ""))
