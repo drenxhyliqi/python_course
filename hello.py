@@ -55,3 +55,12 @@ print("You entered:", userValue1, "and ", userValue2)
 # This will convert the input strings to integers and calculate their sum
 sum = int(userValue1) + int(userValue2)
 print("The sum of the two values is:", sum)  # This will print the sum of
+
+
+# Challenge2
+name = "xhyliqidren"
+sub = "com"
+
+print(f"Info@{name}.{sub}")
+print(f"support@{name}.{sub}")
+print(f"www@{name}.{sub}")
