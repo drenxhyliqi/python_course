@@ -11,3 +11,12 @@ print("Setting Up Python enviroment")
 print("This is the first line.")
 print("This is the second line.")
 print("This is the third line.")
+
+# Special Characters in Python
+print("This is an escape double quote \"Python\"")
+print('You can use also this "format" with single quotes')
+print("This is when you have to print a path: C:\\Users\\Test\\testDoc")
+print("-------------------------------")
+print("You can also use new lines \nto print a new line")
+print("-------------------------------")
+print("You can also use tabs \t to print a tab space between words")
