@@ -106,3 +106,19 @@ print(type(age))
 
 # str
 print("Your age is: " + str(age))
+
+# Math
+password = "123a"
+print(len(password))
+# If statment just for testing
+if len(password) < 8:
+    print("Password should have 8 or more characters")
+else:
+    print("Passowrd is the right length")
+
+text = """
+python is easy to learn and python is 
+one of the most used languages in 2026
+python is also used in data, web, ai etc
+"""
+print(text.count("python")) #This shows how many times the python word is repeated *it's case sensitive*
