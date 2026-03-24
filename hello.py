@@ -26,3 +26,20 @@ print("Your Learning Path: \n\t - Python Basics \n\t - Data Engineering \n\t - A
 print("""With Triple quotes 
       you can print multiple lines
       without using the new line character""")
+
+
+# Variables in Python
+x = 1  # This is a variable assignment
+print(x)
+x = 2  # You can reassign a variable
+print(x)
+y = x + 3  # You can perform operations with variables
+print(y)
+print(x + y)  # You can also perform operations directly in the print statement
+
+name = "Dren"  # You can also assign string values to variables
+print("Hello my name is", name)  # You can print variables along with strings
+# You can also use f-strings for formatted printing
+print(f"Hello my name is {name}")
+# You can also concatenate strings and variables using the + operator
+print("Hello my name is " + name)
