@@ -20,3 +20,9 @@ print("-------------------------------")
 print("You can also use new lines \nto print a new line")
 print("-------------------------------")
 print("You can also use tabs \t to print a tab space between words")
+
+# Python print challenge
+print("Your Learning Path: \n\t - Python Basics \n\t - Data Engineering \n\t - AI")
+print("""With Triple quotes 
+      you can print multiple lines
+      without using the new line character""")
