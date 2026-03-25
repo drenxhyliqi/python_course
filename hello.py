@@ -170,3 +170,21 @@ date = "2026-09-20"
 print(date[0:4])
 print(date[:4])
 print(date[5:7])
+
+# Removing spaces
+surname = " Hardy"
+city = "###London###"
+print(surname.lstrip())  # Removes the spaces from the left side
+print(surname.rstrip())  # Removes the spaces from the right side
+print(surname.strip())  # Removes the spaces from both sides
+
+# Giving an symbol as a parameter removes that symbol from both sides
+print(city.strip("#"))
+
+# How to see if you have blank spaces in your data
+print(len(surname))
+print(len(surname.strip()))
+nr_of_spaces = len(surname) - len(surname.strip())
+is_clean = len(surname) == len(surname.strip())
+print(f"Number of spaces : {nr_of_spaces}")
+print(f"The word is clean : {nr_of_spaces == is_clean}")
