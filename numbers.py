@@ -1,4 +1,5 @@
 import math
+import random
 
 
 def sep():
@@ -53,3 +54,29 @@ print(math.ceil(price))
 
 # Math trunc removes the other numbers does not round the number
 print(math.trunc(price))
+
+sep()
+# Random numebers
+print(random.randint(1, 116))
+
+# Validating numbers
+num1 = 7.0
+num2 = 4.8
+print(num1.is_integer())
+print(num2.is_integer())
+
+# It checks if the num3 has the data type of int
+num3 = 120
+print(isinstance(num3, int))
+print(isinstance(num2, int))
+
+sep()
+
+# Challenge
+random_num = random.randint(1, 100)
+print(random_num)
+
+if random_num % 2 == 0:
+    print(f"The number {random_num} is even")
+else:
+    print(f"The number {random_num} is odd")
