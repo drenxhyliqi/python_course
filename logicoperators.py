@@ -154,3 +154,11 @@ print(f"Your email is valide: {valid_email}")
 
 
 # 4 Check if the user is either an admin or a moderator, and either they are not banned or thet have verified their email
+is_admin = False
+is_moderator = True
+baned = True
+is_verified = True
+
+can_access = (is_admin or is_moderator) and (not baned or is_verified)
+
+print(f"User can access: {can_access}")
