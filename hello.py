@@ -196,6 +196,32 @@ lang = "python PROGRAMMING"
 print(lang.lower())  # Converts everything to lowercase
 print(lang.upper())  # Converts everything to uppercase
 
+# We made the search and the data the same case and removed any possible non nesseccary spaces
 search = "Email ".lower().strip()
 data = " emAIl".lower().strip()
 print(f"The data is clean: {search == data} ")
+
+seperator()
+
+todays_date = "2026-Mar-03"
+phone_num = "+383-49-123-567"
+pers_email = "info@gmail.com"
+office_num = "383-49-175-642"
+
+# Searching
+# startswith(), endswith(), "Feb" in
+# find ( "Feb")
+
+print(f"The phone number start with 383 : {phone_num.startswith("+383")}")
+print(f"The phone number start with 383 : {phone_num.startswith("+386")}")
+print(f"The domain is gmail.com : {pers_email.endswith("gmail.com")}")
+print(f"You have an @ in email : {"@" in pers_email}")
+
+# Extrating only the number with find()
+print(
+    f"This prints the index of the deired character we are looking: {phone_num.find("-")}")
+print(
+    f"This is dynamic finding: {phone_num[phone_num.find("-"):]} it finds the numbers after the - sign")
+print(
+    f"If we want oly the number we also add the replace func: {phone_num[phone_num.find('-'):].replace('-', '')} it finds the numbers after the - sign without including the -")
+seperator()
