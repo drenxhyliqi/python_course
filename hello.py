@@ -225,3 +225,16 @@ print(
 print(
     f"If we want oly the number we also add the replace func: {phone_num[phone_num.find('-'):].replace('-', '')} it finds the numbers after the - sign without including the -")
 seperator()
+
+
+# Validation
+country = "USA"
+city = "Bost0n#"
+postal = "03249"
+radio_hz = "129.2"
+# This check if everything stored in country variable is alphabetic (no numbers)
+print(f"The country var is all letters : {country.isalpha()}")
+print(f"The city var is all letters : {city.isalpha()}")
+print(f"The postal var is all numbers : {postal.isnumeric()}")
+print(
+    f"For radio_hz var the isnumeric() does not work because is an decimal number : {radio_hz.isnumeric()}")
