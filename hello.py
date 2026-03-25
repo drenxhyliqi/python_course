@@ -128,3 +128,28 @@ print(text.count("python")
 phone = "+49 (176) 123-4567"
 print(phone.replace("+", "").replace("(", "").replace(")",
       "").replace("-", "").replace(" ", ""))
+
+
+# f strings
+print(f"my name is {name} and my age is {age}")
+
+# Spliting strings
+stamp = "2026-03-25"
+csv_file = "123,Max,USA, 1970-10-2026,Male"
+print(stamp.split("-"))
+print(csv_file.split(","))
+
+# The * operator
+
+print("ha" * 3)
+print("-" * 40)
+
+# Functions in Python
+
+
+def seperator():
+    print("-" * 40)
+
+
+# Calling the function
+seperator()
