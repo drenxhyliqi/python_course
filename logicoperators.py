@@ -98,8 +98,59 @@ sep()
 # Challenge
 # Validate that the domain is not on the banned list
 print("Domain challnge validation")
-banned_domains = ".com", ".eu", ".org"
-user_domain = input()
+banned_domains = [".com", ".eu", ".org"]
+user_domain = input("Shkruaj domainen: ")
+
+# Lopping inside the list
+# Lopping inside the array, eachbanned is iteratation in the array
+is_banned = any(eachbanned in user_domain for eachbanned in banned_domains)
+print(f"My doamin is banned form this site: {is_banned} ")
+# print(
+#     f"My domain is not banned from the site: {user_domain not in banned_domains}")
+
+sep()
+
+# Identity Operators "is" and "is not"
+# Checks if two variables refer to the same object in memory
+# The == operator compares the values
+# The "is" operator instead compares the id's of the values that are stored in the memory
+
+# Example
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a == b)
+print(a is b)
+u_email = None
+print(u_email is not None and u_email != "")
+
+sep()
+
+# End Section Challenges
+
+# 1 Check if a user's name is not empty and the age is >= 18
+u_name = str(input("Write your name: "))
+valid_name = u_name != ""
+
+u_age = int(input("Write your age: "))
+valid_age = u_age >= 18
 
 print(
-    f"Is my domain banned from this site: {user_domain not in banned_domains}")
+    f"User's name is valid: {valid_name} - and the user's age is valid:  {valid_age}")
+
+
+# 2 Check if the password is at least 8 characters long and does not contain spaces
+
+u_password = input("Write your password: ")
+valid_pass = len(u_password) >= 8 and " " not in u_password
+print(f"Password is valide: {valid_pass}")
+
+# 3 Check if users email is not empty, contains '@', and ends with '.com'
+user_email = input("Write you email again: ")
+valid_email = user_email != "" and "@" in user_email and user_email.endswith(
+    '.com')
+
+print(f"Your email is valide: {valid_email}")
+
+
+# 4 Check if the user is either an admin or a moderator, and either they are not banned or thet have verified their email
