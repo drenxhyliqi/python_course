@@ -238,3 +238,5 @@ print(f"The city var is all letters : {city.isalpha()}")
 print(f"The postal var is all numbers : {postal.isnumeric()}")
 print(
     f"For radio_hz var the isnumeric() does not work because is an decimal number : {radio_hz.isnumeric()}")
+print('-'.join(country))
+print("ht" in lang)
