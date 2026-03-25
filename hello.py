@@ -188,3 +188,14 @@ nr_of_spaces = len(surname) - len(surname.strip())
 is_clean = len(surname) == len(surname.strip())
 print(f"Number of spaces : {nr_of_spaces}")
 print(f"The word is clean : {nr_of_spaces == is_clean}")
+
+seperator()
+
+# Case Conversion
+lang = "python PROGRAMMING"
+print(lang.lower())  # Converts everything to lowercase
+print(lang.upper())  # Converts everything to uppercase
+
+search = "Email ".lower().strip()
+data = " emAIl".lower().strip()
+print(f"The data is clean: {search == data} ")
