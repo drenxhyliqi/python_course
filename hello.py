@@ -140,9 +140,7 @@ print(stamp.split("-"))
 print(csv_file.split(","))
 
 # The * operator
-
 print("ha" * 3)
-print("-" * 40)
 
 # Functions in Python
 
@@ -153,3 +151,22 @@ def seperator():
 
 # Calling the function
 seperator()
+
+# Data extraction indexing and slicing
+# [start:end:step]
+
+text = "Python"
+
+# Extracting the first character
+print(text[0])
+# You can also use the negative indexing but it always starts from -1
+print(text[-6])
+
+# Extracting the last character (the indexing starts from 0)
+print(text[5])
+print(text[-1])
+
+date = "2026-09-20"
+print(date[0:4])
+print(date[:4])
+print(date[5:7])
