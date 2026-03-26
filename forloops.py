@@ -1,5 +1,9 @@
+def sep():
+    print("-" * 30)
+
+
 # Simple for loop
-for i in range(5, 25, 2):  # start, stop, step
+for i in range(5, 15, 2):  # start, stop, step
     print(f"Round {i}")
 
 # Iterating with a loop inside a TUPLE
@@ -24,5 +28,38 @@ for i, lw in enumerate(longword):
 
 
 # Print all the even numbers from 1 to 100 dummy approach
-for n in range(1, 100, 2):
-    print(n)
+# for n in range(1, 100, 2):
+#     print(n)
+
+sep()
+# Real world use cases of for loops
+
+# Challenge find the total score
+scores = [90, 100, 39, 159]
+total = 0
+
+for sc in scores:
+    total += sc
+    print(f"Current total: {total}")
+
+print(f"the total is: {total}")
+
+sep()
+
+# Challenge Data cleaning
+# First clean data then do data manipulation
+files = ['  Report.csv  ', 'DATA.csv ', 'final.TXT ']
+for c in files:
+    c = c.strip().lower().replace('txt', 'csv')
+    print(f"Cleaned file: {c}")
+
+sep()
+# Challenge print the 7-times table from 1 to 10 usgin a for loop
+for i in range(1, 11):
+    print(f"7 x {i} = {7 * i}")
+
+sep()
+
+# Challenge print a left-aligned pyramid of stars with 6 rows using a for loop
+for i in range(1, 7):
+    print(f"{"*" * i}")
