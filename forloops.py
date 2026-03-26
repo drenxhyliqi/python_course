@@ -126,3 +126,86 @@ for email in emails:
         print("SQL INJECTION DETECTED")
         break
     print(email)
+
+sep()
+
+# Else in loop - runs a block of code only if the loop finishes naturally
+hobbies = [
+    'hiking',
+    'gaming',
+    'football',
+    'pingpong'
+]
+
+for hobby in hobbies:
+    print(f"Your hobbies are: {hobby}")
+else:
+    print("You c an always make more hobbies :)")
+
+
+# Task check if there are any missing names in the list
+
+names2 = ['Kevin', 'Jayson', 'Michale', None, 'Arthur']
+
+for names in names2:
+    if names is None:
+        print("Found a missing name")
+        break
+else:
+    print("Everything is okay, all names are available")
+
+sep()
+# Task - check if all files are csv files
+
+files = [
+    'learn.csv',
+    'prod.csv',
+    'text.txt',
+    'presantation.pdf'
+]
+
+for f in files:
+    if not f.endswith('.csv'):
+        print(f"Found file that is not csv: {f}")
+        break
+else:
+    print("Every file is csv")
+
+sep()
+
+colors = ['red', 'blue', 'green']
+sizes = ['L', 'M', 'S']
+
+# Nested loops
+for color in colors:
+    for size in sizes:
+        print(f'{color} - Size {size}')
+
+    sep()
+
+# Challenge check whether any filname appears more than once
+
+file_list = [
+    'report.csv',
+    'data.csv',
+    'summary.csv',
+    'report.csv',
+    'data.csv',
+]
+duplicate_found = False
+
+for fl in file_list:
+    if file_list.count(fl) > 1:
+        print(f"This file has a duplicate: {fl}")
+        duplicate_found = True
+if not duplicate_found:
+    print("All files are unique")
+
+sep()
+
+
+numbers = [5, 8, 12, 3]
+for num in numbers:
+    if num > 10:
+        print("found")
+        break
