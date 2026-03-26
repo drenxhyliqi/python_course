@@ -70,22 +70,24 @@ match country:
 # 5. Must not be longer than 254 characters
 # 6. Must start and end with a letter or a digit
 
-email = input("Write your email: ")
+while True:
+    email = input("Write your email: ")
 
-if email == "":
-    print("Email can not be empty!")
-elif "." and "@" not in email:
-    print("Email should have at least one . and one @")
-elif email.count("@") != 1:
-    print("You can have only one @ symbol")
-elif not email.endswith(".com" or ".org" or ".net"):
-    print("Email is not valid use .com, .org or .net")
-elif len(email) > 254:
-    print("Email should have less than 254 characters")
-elif not email[0].isalnum() and email[-1].isalnum():
-    print("Email should start with a letter or number")
-else:
-    print(email)
+    if email == "":
+        print("Email can not be empty!")
+    elif "." and "@" not in email:
+        print("Email should have at least one . and one @")
+    elif email.count("@") != 1:
+        print("You can have only one @ symbol")
+    elif not email.endswith(".com" or ".org" or ".net"):
+        print("Email is not valid use .com, .org or .net")
+    elif len(email) > 254:
+        print("Email should have less than 254 characters")
+    elif not email[0].isalnum() and email[-1].isalnum():
+        print("Email should start with a letter or number")
+    else:
+        print(email)
+        break
 
 # Challenge Password
 # Validate the quality and correctness of passwords
