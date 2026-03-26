@@ -99,3 +99,30 @@ for n in names:
     print(n)
 
 sep()
+
+# Challenge : loop through a list of days and print only the working days, skipping the weekends
+
+days = ['monday', 'Tuesday  ', 'SaTurday  ',
+        'Monday', 'WEDNESDAY', '  sunday  ', 'thursday']
+
+for d in days:
+    d = d.strip().lower()
+    if d in ['saturday', 'sunday']:
+        continue
+    print(f"Working days: {d}")
+
+sep()
+
+# Challenge : scan emails to block unsafe data from entering your system
+emails = [
+    'data@gmail.com',
+    'python@outlook.com',
+    'DROP TABLE USERS;',
+    'dren@gmail.eu'
+]
+
+for email in emails:
+    if ';' in email:
+        print("SQL INJECTION DETECTED")
+        break
+    print(email)
