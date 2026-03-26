@@ -63,3 +63,39 @@ sep()
 # Challenge print a left-aligned pyramid of stars with 6 rows using a for loop
 for i in range(1, 7):
     print(f"{"*" * i}")
+
+sep()
+
+# Break inside loops
+for i in range(5, 20):
+    if i > 10:
+        break
+    print(i)
+
+sep()
+
+names = ['john', 'mike', '', 'casey']
+
+# Pass
+for n in names:
+    if n == '':
+        pass  # todo: Handle Empty Value
+    print(f"Name = {n}")
+
+sep()
+
+# Continue inside loops
+for name in names:
+    if name == '':
+        continue  # Continue, continues the loop so it skips one loop cycle when that condition is met, it does not stop the loop
+    print(name)
+
+sep()
+
+for n in names:
+    if n == '':
+        print("Empty value detected!")
+        break  # The break, breaks the loop when the condition is met
+    print(n)
+
+sep()
