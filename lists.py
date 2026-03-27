@@ -87,3 +87,32 @@ education = ['Dren', 19, 25, 231, 381, True, None, 'University of Prishtina']
 name, *_, faculty = education
 
 print(f"Name: {name} - faculty: {faculty}")
+
+print('-' * 30)
+# Analyzing Lists
+# Functions max(), min(), sum(), len(), all(), any()
+# Methods .count(), .index()
+# Operators in, is, ==, >
+
+num = [1, 2, 4, 5, 2, 2, 3, 0, 2]
+# Functions
+print("Max:", max(num))
+print("Min:", min(num))
+print("Sum:", sum(num))
+print("Length:", len(num))
+print("All:", all(num))
+print("Any:", any(num))
+
+# Methods
+print("Number 2 apperars", num.count(2), "times")
+print("The index for number 5 is ", num.index(5))
+
+# Operators
+print("Is 5 in the list: ", 5 in num)
+print("Is 8 not in the list: ", 8 not in num)
+print("Is 5 the list: ", 5 is num)
+print("Is num the list: ", num is num)
+print("Is 5 the list: ", 5 is num)
+print("Is person list == num list: ", person == num)
+# It checks only the first values of the 2 list if sli first value > then num first value its True else False
+print("Is sli list > num list: ", sli > num)
