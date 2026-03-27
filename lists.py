@@ -162,3 +162,23 @@ matrix[1].remove('P')  # It removes the P letter from row 1
 matrix[-1].pop(0)  # Remove the first item of the last row
 matrix[0].pop()  # It removes the last item of the first row
 print(matrix)
+
+print('-' * 80)
+
+# Upadting Items
+
+up = ['a', 'b', 'c', 'd']
+up_mat = [
+    ['a', 'b', 'c'],
+    ['d', 'e', 'f'],
+    ['g', 'h', 'i']
+]
+
+up[2] = 'x'  # This overwrites the value
+print(up)
+
+up_mat[-1] = ['x', 'y', 'z']
+print(up_mat)
+up_mat[0][0] = '~~'
+up_mat[1][1] = '$$'
+print(up_mat)
