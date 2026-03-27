@@ -116,3 +116,49 @@ print("Is 5 the list: ", 5 is num)
 print("Is person list == num list: ", person == num)
 # It checks only the first values of the 2 list if sli first value > then num first value its True else False
 print("Is sli list > num list: ", sli > num)
+
+# Dynamic adding and removing
+# ADD
+# REMOVE
+# UPDATE
+print('-' * 30)
+
+chars = ['a', 'b', 'c', 'd']
+chars.append('e')  # It always insert things at the end of the list
+print(chars)
+
+# This func insert things based on the index you provide inside the list
+chars.insert(1, 'x')
+chars.insert(0, 'g')
+matrix.insert(0, [1, 11, 111, 111])
+matrix[0].append(1111)
+matrix[1].insert(0, 'P')
+print(chars)
+print(matrix)
+
+print('-' * 30)
+# Deleting
+chars.clear()  # It deletese all the content inside that list
+print(chars)
+
+chars.append('a')
+chars.append('a')
+print(chars)
+# You give a specific element you want to remove it removes only the first match
+chars.remove('a')
+
+print(chars)
+
+# Deleting by position
+education.pop(0)
+removed = education.pop()  # It will always removes the last item but also stores it
+print(education)
+print("removed item: ", removed)
+
+# We use 'remove' when we want to remove things by the value
+# We use 'pop' when we want to remove things by the position
+print(matrix)
+matrix[1].remove('P')  # It removes the P letter from row 1
+matrix[-1].pop(0)  # Remove the first item of the last row
+matrix[0].pop()  # It removes the last item of the first row
+print(matrix)
