@@ -209,3 +209,26 @@ for num in numbers:
     if num > 10:
         print("found")
         break
+sep()
+
+
+# Task - write a program that keeps asking "Do you agree?" until the user types "yes"
+agreement = ""
+while agreement.lower() != "yes":
+    agreement = input("Do you agree? yes/no: ")
+print("Thank you")
+
+sep()
+
+# While True loop
+answer = ""
+attempts = 0
+while attempts < 3:
+    answer = input("Do you agree? yes/no: ")
+    if answer.lower() == 'yes':
+        print("Glad we are on the same page")
+        break
+    attempts += 1
+    print(f"You have 3 attempts. Attempts: {attempts}")
+else:
+    print("3 strikes. You are out!")
