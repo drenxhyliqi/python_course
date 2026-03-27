@@ -182,3 +182,53 @@ print(up_mat)
 up_mat[0][0] = '~~'
 up_mat[1][1] = '$$'
 print(up_mat)
+
+print('-' * 80)
+# Sorting Lists
+arr = [919, 1002, 35, 351, 662, 32, 612, 5, 358, 99, 64]
+arr_alpha = ['z', 'd', 'a', 'f', 'g', 't']
+# Ascending
+# If you leave the sort without a parameter it will sort from A->Z so Ascending
+arr_alpha.sort()
+print(arr_alpha)
+arr_alpha.sort(reverse=True)  # It sorts by descending
+print(arr_alpha)
+
+# For the numbers
+arr.sort()  # From the smallest to biggest
+print(arr)
+arr.sort(reverse=True)  # From biggest to smallest
+for prices in arr:
+    print(f"Price: {prices}$")
+
+# Sorting a matrix
+sort_mat = [
+    ['a', 'o', 'c'],
+    ['l', 'e', 'g'],
+    ['g', 'z', 'i']
+]
+# It will sort by the first items of each row so, l<g<a
+sort_mat.sort(reverse=True)
+print(sort_mat)
+
+sort_mat[-1].sort()  # It will sort the letters inside the last row
+print(sort_mat)
+
+# This will create a copy of the list (sorted) but without changing the original list
+copy_list = sorted(arr_alpha)
+print("Original list ", arr_alpha)  # Original list
+print("Copy list sorted: ", copy_list)  # Copy of original list but sorted
+copy_list = sorted(arr_alpha, reverse=True)
+print("Reversed sorted copy list: ", copy_list)
+
+
+# Reversing the list
+flip = ['mike', 'angel', 'kevin', 'bruno', 'dennis', 'brian']
+flip.reverse()  # This revereses the list without touching the data it just flips it over
+print(flip)
+
+# You can sort and then flip
+flip.sort()
+print("Sorted list: ", flip)
+flip.reverse()
+print("Fliped and sorted list:", flip)
