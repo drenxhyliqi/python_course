@@ -92,4 +92,16 @@ for index, value in enumerate(letters):
 print(list(reversed(iteratable)))
 
 for index2, value2 in enumerate(employee):
-    print(index2, value2)
+    print(index2, value2)  # Iterating in tupples
+
+
+# The map iterator
+fruits = ['banana', 'kiwi', 'apple', 'pineapple', 'watermelon']
+# The map function will make changes to our list without the need of a for loop,
+# it just needs 2 parameters function/iteratable
+print(list(map(str.upper, fruits)))
+
+messy_names = ['  Kevin  ', ' Adam  ', 'Leo  ']
+print(list(map(str.strip, messy_names)))  # Cleaning lists from unwanted spaces
+for n in map(str.strip, messy_names):
+    print(n)
