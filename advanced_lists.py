@@ -80,3 +80,16 @@ names = ['Ali', 'Sarah', 'John']
 # It makes the relationship with ids and the names
 employee = list(zip(ids, names))
 print(employee)
+
+
+# Enamurate - retruns the index and the value
+iteratable = ['a', 'b', 'c', 'd']
+
+# print(list(enumerate(iteratable, start = 1)))
+for index, value in enumerate(letters):
+    print(index, value)
+
+print(list(reversed(iteratable)))
+
+for index2, value2 in enumerate(employee):
+    print(index2, value2)
