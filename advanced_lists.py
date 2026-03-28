@@ -47,3 +47,36 @@ print("Shared Lists?: ", list1[0] is copy2[0])  # They share the same children
 deepcopy = copy.deepcopy(list1)
 print("Same referencing: ", list1 is deepcopy)
 print("Shared Lists for deep copy?: ", list1[0] is deepcopy[0])
+
+
+# Combining Lists
+letters = ['a', 'b', 'c']
+numbers = [1, 2, 3]
+comb = letters + numbers  # With the + operator
+print("The combined list:", comb)
+
+print(letters * 2)  # You can multiply lists
+
+comb2 = [letters, numbers]  # Building a nested list
+print(comb2)
+
+# This extends the list but without changing the original
+letters.extend(numbers)
+print(letters)
+
+# Zip Function for pairing lists in tuples
+# The outcome is a list of tuples
+
+char = ['x', 'z', 'y', 'g']
+num = [5, 6, 7]
+# If we only use the list we are going to get the iterator object, so we use the list to change the data type
+combined = list(zip(char, num, "car"))
+# The list stops at the shortest list so the letter g will not be paired with anything
+print(combined)
+
+# Example
+ids = [101, 102, 103]
+names = ['Ali', 'Sarah', 'John']
+# It makes the relationship with ids and the names
+employee = list(zip(ids, names))
+print(employee)
