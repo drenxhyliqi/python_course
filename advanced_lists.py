@@ -103,5 +103,12 @@ print(list(map(str.upper, fruits)))
 
 messy_names = ['  Kevin  ', ' Adam  ', 'Leo  ']
 print(list(map(str.strip, messy_names)))  # Cleaning lists from unwanted spaces
+
 for n in map(str.strip, messy_names):
     print(n)
+
+
+# FIltering Data
+mixed = ['DREN', '18', '499912', 'ABBY', 'CANE', '24']
+for f in filter(str.isalpha, mixed):
+    print(f)
