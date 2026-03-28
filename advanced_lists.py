@@ -112,3 +112,61 @@ for n in map(str.strip, messy_names):
 mixed = ['DREN', '18', '499912', 'ABBY', 'CANE', '24']
 for f in filter(str.isalpha, mixed):
     print(f)
+
+
+# Lambda - for creating your own logic (anonymous function)
+# lambda input : expression
+print('lambda')
+def multiply(x): return x*4
+def sum(x, y): return x + y
+
+
+# Multiply var is holding this formula
+print(multiply(10))
+print(sum(10, 90))
+
+
+def check(i): return i in "python"
+
+
+print(check('n'))
+prices = ['12.50$', '6.66$', '100$', '9.99$']
+# First the data transformation p.replace('$','')
+# Assigned to lambda p: p.replace('$','')
+# Use the map for the logic and iterable
+print(list(map(lambda p: float(p.replace('$', '')), prices)))
+
+# Lambda + filter
+prices = [120, 30, 300, 80]
+print(list(filter(lambda p: p >= 100, prices)))
+
+students = [
+    ['Maria', 95],
+    ['John', 70],
+    ['Mike', 68],
+    ['Lamar', 98]
+]
+# For nested list we always give lambda the row
+print(list(filter(lambda row: row[1] >= 80, students)))
+print('\n')
+print(list(filter(lambda row: row[0].startswith('M'), students)))
+
+
+# Comprehension
+domains = [
+    'www.google.com',
+    'www.openai.com',
+    'localhost3000',
+    'WWW.CHATGPT.COM',
+]
+
+cleaned = [
+    # Data transformation
+    d.lower().replace('www', '').strip('.')
+    # For loop
+    for d in domains
+    # Data filtering
+    if '.' in d
+]
+
+print(cleaned)
