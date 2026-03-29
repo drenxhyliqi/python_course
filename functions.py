@@ -5,14 +5,26 @@ def make_coffee():
     print("Add Milk")
     print("Enyoy it")
 
-# *args and **kwargs allow functions to accpet a unknown number of arguments
-
 
 def clean_up(first_name, last_name, country="Not Known"):  # Default Parameters
     first = first_name.strip().lower()
     last = last_name.strip().lower()
     full_name = first + " " + last
     print(full_name, "From: ", country)
+
+# *args and **kwargs allow functions to accpet a unknown number of arguments
+
+# * Tupple
+
+
+def total(*args):  # * We use the 1 star args when we pass similiar values into the function
+    print(sum(args))
+
+# * Dict
+
+
+def create_user(**kwargs):
+    print(kwargs)
 
 
 print("Wake up")
@@ -27,3 +39,17 @@ print(name.strip().lower())
 clean_up("  LarRrED ", " JacKSon  ", "DE")  # Positional Argument
 clean_up("  SaaDerr ", "  KoldAn  ", "USA")
 clean_up("  DreN ", "  XhyLIQI  ")
+
+total(1, 2)
+total(1, 2, 3)
+total(10, 12, 341, 931)
+
+create_user(first_name="Mo",
+            last_name="Salah",
+            age=33,
+            country="Egypt"
+            )
+
+create_user(name="Lionel",
+            country="Argentina"
+            )
