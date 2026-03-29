@@ -297,3 +297,16 @@ print(item_removed)
 # Creation
 users = dict.fromkeys(["relegion", "gender", "height", "weight"], None)
 print(users)
+
+
+# Challenge
+# Real use cases
+user_str = {
+    # Expression
+    k: v.upper()
+    # Loop
+    for k, v in user.items()
+    # Filter
+    if isinstance(v, str)
+}
+print(user_str)
