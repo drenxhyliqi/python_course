@@ -166,7 +166,53 @@ cleaned = [
     # For loop
     for d in domains
     # Data filtering
-    if '.' in d
+    if '.' in d  # Remove the localhost3000 from the list
 ]
 
 print(cleaned)
+
+
+# Sets
+# It holds unique values so no duplicate values
+
+my_set = {10, 30, 20, 10}
+print(my_set)
+
+print(type(my_set))
+my_set.remove(20)
+print(my_set)  # Set is mutable
+
+
+# Set methods
+a = {10, 20, 30, 40}
+b = {30, 40, 50, 60}
+
+# ADDING AN ITEM
+a.add(90)  # If its not there it adds it so only new values
+print(a)
+
+a.update("Hi")
+a.update([1, 2, 0])
+a |= {9, 19, 2}
+
+# Removing items
+a.remove(10)
+a.discard(78)
+print(a)
+
+# Set math operations
+
+# Combine 2 sets
+print(a.union(b))  # Does not change the original sets it just merges them
+print(a | b)  # Same but with the operator
+
+# Intersection (te perbashketat)
+print(a.intersection(b))
+print(a & b)
+
+# Only in A not in B
+print(a.difference(b))
+print(b - a)
+
+# The unique values, only non shared items
+print(a.symmetric_difference(b))
