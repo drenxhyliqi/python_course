@@ -7,10 +7,18 @@ def make_coffee():
 
 
 def clean_up(first_name, last_name, country="Not Known"):  # Default Parameters
-    first = first_name.strip().lower()
-    last = last_name.strip().lower()
-    full_name = first + " " + last
-    print(full_name, "From: ", country)
+    if not name:
+        return None
+    else:
+        cleaned = name.strip().lower()
+        return cleaned
+
+
+def double_return(position):
+    position_lo = position.strip().lower()
+    position_up = position.strip().upper()
+    return position_lo, position_up
+
 
 # *args and **kwargs allow functions to accpet a unknown number of arguments
 
@@ -53,3 +61,5 @@ create_user(first_name="Mo",
 create_user(name="Lionel",
             country="Argentina"
             )
+
+print(double_return("Software EnginEEr   "))
