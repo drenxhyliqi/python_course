@@ -216,3 +216,84 @@ print(b - a)
 
 # The unique values, only non shared items
 print(a.symmetric_difference(b))
+print(a ^ b)
+
+
+# Set relationship methods True/False
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60}
+set3 = {20, 30, 50}
+
+# If all items in A exist in B
+print(set1.issubset(set2))
+print(set3.issubset(set1))
+
+# Are the sets unique, you dont  have overlapping
+print(set1.isdisjoint(set2))
+print(set3.isdisjoint(set2))
+
+# Dictionaries, its ordered, not indexed, mutable, duplicates only in values (not keyes)
+names = ['alex', 'kumar', 'maria']
+ages = [33, 21, 20]
+countries = ['USA', 'India', 'Albania']
+
+# pairs of keyvalues
+# Keyes are unique
+# Vlues allow duplicates
+my_dict = {
+    'a': 10,
+    'b': 20,
+    'c': 30,
+    'a': 40
+}
+# DIctionarie is not indexed, here we use keyes
+print(my_dict)
+print(my_dict['b'])  # Its keyed
+my_dict['c'] = 80  # Its mutable
+print(my_dict)
+
+# Dict methods
+user = {"id": 1, "age": 30, "city": "Berlin"}
+
+# How to acces
+print(user['city'])
+# If you dont know if the key exist you use the get method
+print(user.get('name', "Unknown"))
+
+# Check the keyes
+print("age" in user)
+print("name" in user)
+
+# View Objects
+print(user.keys())
+print(user.values())
+
+# Keys + values
+print(user.items())
+
+# Looping in dicts
+for key, value in user.items():
+    print(key, value)
+
+
+# Add, Remove, Update key / values
+
+# Adding
+user["name"] = "John"
+print(user)
+
+# Updating
+user["age"] = 15
+# Update multiple values
+user.update({"age": 20, "name": "Dren", "city": "Paris"})
+print(user)
+
+# Removing
+item_removed = user.pop("age")
+user.pop("Salary", "Not found")
+print(user)
+print(item_removed)
+
+# Creation
+users = dict.fromkeys(["relegion", "gender", "height", "weight"], None)
+print(users)
