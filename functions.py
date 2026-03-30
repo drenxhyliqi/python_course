@@ -86,3 +86,16 @@ def clean_and_split(email):
 
 
 print(clean_and_split("  tesTEmAil@gmail.com"))
+
+
+# Validation Function True/False
+
+# * Check if an email has a basic valid format
+
+def is_email_valid(email):
+    cleaned_email = email.strip().lower()
+    return "@" in cleaned_email and "." in cleaned_email
+
+
+print(is_email_valid("  drenxh1"))
+print(is_email_valid("  drenxh1@gmail.org"))
