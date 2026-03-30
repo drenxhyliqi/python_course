@@ -63,3 +63,26 @@ create_user(name="Lionel",
             )
 
 print(double_return("Software EnginEEr   "))
+
+
+# * Task: store application log messages in a file
+
+def write_log(message):
+    with open(r"app.log", "a") as file:
+        file.write(message + "\n")
+
+
+write_log("App started")
+write_log("User Logged In")
+
+
+# Transformation Function
+# * Task : Clean email addreses and split them into structered data
+def clean_and_split(email):
+    cl_email = email.strip().lower()
+    # drenxh@gmail.com
+    username, domain = cl_email.split("@")
+    return {"Username": username, "Domain": domain}
+
+
+print(clean_and_split("  tesTEmAil@gmail.com"))
