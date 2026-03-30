@@ -99,3 +99,47 @@ def is_email_valid(email):
 
 print(is_email_valid("  drenxh1"))
 print(is_email_valid("  drenxh1@gmail.org"))
+
+# Orchestrator Function it controls the order of other small function how they should be exectuted
+
+# * Project:
+# * 1. Receive an email from the user
+# * 2. Validate the email
+# * 3. If it is invalid, log an erorr in a file
+# * 4. If it is valid, clean and structure the email
+# * 5. Log each step of the program
+
+# email_from_user = input("Write your email: ")
+
+
+# def validate_email(email_from_user):
+#     if '@' in email_from_user and '.' in email_from_user:
+#         clean_em = email_from_user.strip().lower()
+#         username, domain = email_from_user.split('@')
+#         return {
+#             "username": username,
+#             "domain": domain
+#         }
+#         print("The email has been successfully added!")
+#     else:
+#         with open(r"invalid_emails.log", "a") as file:
+#             file.write(email_from_user + "\n")
+#             print("Email is invalid, try again!")
+
+
+# result = validate_email(email_from_user)
+# print(result)
+
+
+email = input("Write your email: ")
+
+
+def process_user_email(email):
+    write_log("App Started")
+    # we must check if it is valid
+    if not is_email_valid(email):
+        write_log(f"Invalid email received: {email}")
+    else:
+        clean_email = clean_and_split(email)
+        write_log(f"Processed Email: {clean_email}")
+    write_log("App Stopped")
